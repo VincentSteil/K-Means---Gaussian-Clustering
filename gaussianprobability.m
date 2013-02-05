@@ -12,7 +12,7 @@ mu = reshape(mew, 3, 1);
 
 exponent = (-0.5) * (x - mu)' * inv(covariancematrix) * (x - mu);
   
-A = ((2*pi)^1.5)*((det(covariancematrix))^0.5);
+A = ((2*pi)^1.5) * ((det(covariancematrix))^0.5);
 
-probability = (1/A)*exp(exponent);
+probability = (1/A) * exp(exponent);
 
